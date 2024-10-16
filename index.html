@@ -13,8 +13,18 @@
   </header>
   <main>
     <section id="stocks-section">
-      <h2>Stock Market Data</h2>
+      <h2>Search for Stock Prices</h2>
+      <div id="search-bar">
+        <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g., AAPL)">
+        <button id="search-btn">Search</button>
+      </div>
+
       <div id="stock-data"></div>
+      <div id="error"></div>
+      <h2>Your Favorite Stocks</h2>
+      <div id="favorites-container">
+        <!-- List of saved favorites will be rendered here -->
+      </div>
     </section>
 
     <section id="crypto-section">

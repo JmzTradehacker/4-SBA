@@ -2,46 +2,59 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: hsl(136, 100%, 18%);
   }
   
   header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: hsl(136, 100%, 18%);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem;
   }
   
   main {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1em;
   }
   
   section {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    background: #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px hsla(0, 0%, 100%, 0.429);
+    padding: 1%;
   }
   
   h2 {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
   }
   
-  #stock-data, #crypto-data, #news-data {
+  #stock-data, #crypto-data, #news-data, #search-bar, #favorites-container {
+    color: hsl(0, 0%, 100%);
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
   }
   
   .stock-item, .crypto-item, .news-item {
-    background: #e7e7e7;
+    background: hsl(0, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem;
     border-radius: 8px;
-    flex: 1 1 calc(33.33% - 2rem);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px hwb(0 100% 0%);
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
   }
   
   @media (max-width: 768px) {
