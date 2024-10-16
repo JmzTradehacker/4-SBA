@@ -1,3 +1,4 @@
+//Display AlphaVantage Api
 export function displayStockData(stock) {
     const stockDataContainer = document.getElementById('stock-data');
 
@@ -13,4 +14,19 @@ export function displayStockData(stock) {
     `;
 
     stockDataContainer.appendChild(stockItem);
+}
+
+//Display CoinGecko Api
+export function displayCryptoData(crypto) {
+    const cryptoDataContainer = document.getElementById('crypto-data');
+
+    const cryptoItem = document.createElement('div');
+    cryptoItem.classList.add('crypto-item');
+
+    cryptoItem.innerHTML = `
+        <h3>${crypto.id.toUpperCase()}</h3>
+        <p>Price: $${crypto.price}</p>
+    `;
+
+    cryptoDataContainer.appendChild(cryptoItem);
 }
