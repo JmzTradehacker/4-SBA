@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #stock-data, #crypto-data, #news-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .stock-item, .crypto-item, .news-item {
+    background: #e7e7e7;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 calc(33.33% - 2rem);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .stock-item, .crypto-item, .news-item {
+      flex: 1 1 100%;
+    }
+  }
+  
