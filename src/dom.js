@@ -14,7 +14,7 @@ export function displayStockData(stock) {
     `;
 
     stockDataContainer.appendChild(stockItem);
-}
+};
 
 //Display CoinGecko Api
 export function displayCryptoData(crypto) {
@@ -29,4 +29,22 @@ export function displayCryptoData(crypto) {
     `;
 
     cryptoDataContainer.appendChild(cryptoItem);
-}
+};
+
+//Display News Api
+export function displayFinanceNews(articles) {
+    const newsDataContainer = document.getElementById('news-data');
+
+    articles.forEach(article => {
+        const newsItem = document.createElement('div');
+        newsItem.classList.add('news-item');
+
+        newsItem.innerHTML = `
+            <h3>${article.title}</h3>
+            <p>${article.description}</p>
+            <a href="${article.url}" target="_blank">Read more</a>
+        `;
+
+        newsDataContainer.appendChild(newsItem);
+    });
+};
